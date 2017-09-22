@@ -18,7 +18,7 @@ var getUrls = function(body, host, callback) {
           var params = {
             Message: url, /* required */
             Subject: 'STRING_VALUE',
-            TopicArn: 'arn:aws:sns:us-east-1:097862902341:urls'
+            TopicArn: ''
           };
           sns.publish(params, (err, data) => {
             if(err) console.log(err, err.stack);
