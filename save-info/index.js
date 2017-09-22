@@ -70,7 +70,7 @@ var postNewNews = function(newMessage, message, callback) {
           var params = {
           Message: message, /* required */
           Subject: 'STRING_VALUE',
-          TopicArn: 'arn:aws:sns:us-east-1:097862902341:saved-info'
+          TopicArn: ''
         };
         sns.publish(params, (err, data) => {
             if(err) console.log(err, err.stack);
